@@ -2,9 +2,20 @@
 
 The user interface for **Cosmicgram**—an AI-powered, safe social media environment. It features a modern, responsive layout, real-time safety badges, and deep integrations with the **Prahari AI Shield** to automatically enforce community standards right as posts are created.
 
+## 📸 Screenshots
+
+### Harmful Content Detection
+![Harmful Content Detection](screenshots/harmful.png)
+
+### Real-time Comments Analysis
+![Real-time Comments Analysis](screenshots/comment.png)
+
+### Automated Account Restrictions
+![Automated Account Restrictions](screenshots/account%20restricted.png)
+
 > 🔗 **Looking for the AI Backend?**
 > The backend logic (FastAPI, Python, MuRIL, CLIP) lives in its own dedicated repository. 
-> [**Click here to view the Cosmicgram Backend Repository**](https://github.com/YOUR_GITHUB_USERNAME/cosmicgram-backend)
+> [**Click here to view the Cosmicgram Backend Repository**](https://github.com/ZohairShakirE/CG-B)
 
 
 ---
@@ -14,17 +25,6 @@ The user interface for **Cosmicgram**—an AI-powered, safe social media environ
 -   🚀 **Lightning Fast Feed**: Optimized React components built with Vite and TailwindCSS.
 -   📱 **Fully Responsive**: Adapts flawlessly from mobile browsers to ultra-wide desktop monitors.
 -   🛡️ **Prahari Integration**: The "Create Post" screen immediately queries the Prahari Backend before publishing, giving users immediate feedback via the Warning Modal if their content is flagged.
-
----
-
-## 📸 Screenshots
-
-*(Replace the paths below with your actual screenshot images once deployed)*
-
-| Home Feed (Safe/Flagged Posts) | Post Creation (Prahari Shield Active) |
-| :----------------------- | :--------------------------- |
-| `![Feed Screenshot](public/feed.png)` | `![Creator Screenshot](public/create_post.png)` |
-
 ---
 
 ## 🛠️ Tech Stack
