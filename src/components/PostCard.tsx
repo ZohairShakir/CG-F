@@ -90,7 +90,7 @@ const PostCard = ({ post }: { post: Post }) => {
           {!post.aiSafe ? (
             <div className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-destructive/10 text-destructive text-[10px] font-bold uppercase tracking-wider border border-destructive/20 animate-pulse">
               <ShieldAlert className="h-3 w-3" />
-              <span>{post.aiLabel || 'Safety Alert'} detected ({post.aiConfidence}%)</span>
+              <span>{post.aiLabel || 'Hateful'}</span>
             </div>
           ) : (
             <>
@@ -103,12 +103,6 @@ const PostCard = ({ post }: { post: Post }) => {
                 <div className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-success/10 text-success text-xs">
                   <Shield className="h-3 w-3" />
                   <span>Safe</span>
-                </div>
-              )}
-              {post.isAiGenerated && (
-                <div className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-600 text-xs border border-amber-500/20">
-                  <AlertTriangle className="h-3 w-3" />
-                  <span>AI Generated</span>
                 </div>
               )}
             </>

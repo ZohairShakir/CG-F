@@ -180,15 +180,6 @@ const CreatePost = () => {
                 <Shield className="h-4 w-4 text-primary" />
                 <span>This post will be scanned by our AI for offensive content, hate speech, and targeted harassment.</span>
               </div>
-              <div className="flex items-center justify-between px-3 py-2 bg-amber-500/5 rounded-lg border border-amber-500/10">
-                <div className="flex items-center gap-2">
-                  <AlertTriangle className={`h-4 w-4 transition-colors ${posting ? "text-muted-foreground animate-pulse" : "text-amber-500"}`} />
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600">AI Source Recognition</span>
-                </div>
-                <span className="text-[9px] text-muted-foreground italic">
-                  {posting ? "Analyzing Image..." : "Prahari Passive Scan Active"}
-                </span>
-              </div>
             </div>
           </div>
         )}
@@ -238,7 +229,7 @@ const CreatePost = () => {
                     onClick={() => setShowWarning(false)}
                     className="w-full py-2 bg-foreground text-background rounded-lg font-bold hover:opacity-90"
                   >
-                    Edit Caption
+                    Edit
                   </button>
                   <button 
                     onClick={handlePostAnyway}
